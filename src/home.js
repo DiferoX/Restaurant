@@ -11,6 +11,7 @@ function displayHome()
 
   let contentOne = document.createElement('div');
   contentOne.classList.add('contentOne');
+  contentOne.setAttribute('id', 'contentOne');
 
   let img1 = document.createElement('img');
   img1.src = 'images/restaurant.jpg';
@@ -55,6 +56,7 @@ function displayHome()
 
   let contentTwo = document.createElement('div');
   contentTwo.classList.add('contentTwo');
+  contentTwo.setAttribute('id', 'contentTwo');
 
   let img2 = document.createElement('img');
   img2.src = 'images/salad.jpg';
@@ -95,6 +97,7 @@ function displayHome()
 
   let contentThree = document.createElement('div');
   contentThree.classList.add('contentThree');
+  contentThree.setAttribute('id', 'contentThree');
 
   let img3 = document.createElement('img');
   img3.src = 'images/red-wine.jpg';
@@ -103,7 +106,7 @@ function displayHome()
   info3.classList.add('info');
 
   let txt3_1 = document.createElement('h4');
-  txt3_1.textContent = "Inspiration Kitchen";
+  txt3_1.textContent = "INSPIRATION KITCHEN";
 
   let txt3_2 = document.createElement('p');
   txt3_2.textContent = "A beautiful, creative and light dining room with an open kitchen & wine cellar. The room is ideal for exclusive private dining, anniversaries, meetings and other private events.\nThe Inspiration Kitchen serves the same menu as the restaurant and seats up to 16 guests.";
@@ -135,6 +138,7 @@ function displayHome()
 
   let contentFour = document.createElement('div');
   contentFour.classList.add('contentFour');
+  contentFour.setAttribute('id', 'contentFour');
 
   let img4 = document.createElement('img');
   img4.src = 'images/fire.jpg';
@@ -170,6 +174,41 @@ function displayHome()
   contentFour.appendChild(right4);
   contentFour.appendChild(left4);
 
+
+  sideBar();
+
 }
+
+function sideBar()
+{
+  let sidebarContent = document.createElement('div');
+  sidebarContent.classList.add('sidebarContent');
+
+
+  let link1 = document.createElement('a');
+  link1.textContent = "Lindblum";
+  link1.href = '#contentOne';
+
+  let link2 = document.createElement('a');
+  link2.textContent = "The Gastronomy";
+  link2.href = '#contentTwo';
+
+  let link3 = document.createElement('a');
+  link3.textContent = "Inspiration";
+  link3.href = '#contentThree';
+
+  let link4 = document.createElement('a');
+  link4.textContent = "The Fire";
+  link4.href = '#contentFour';
+
+
+  displayContent.appendChild(sidebarContent);
+  sidebarContent.appendChild(link1);
+  sidebarContent.appendChild(link2);
+  sidebarContent.appendChild(link3);
+  sidebarContent.appendChild(link4);
+
+}
+
 
 export default displayHome;

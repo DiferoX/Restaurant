@@ -19,6 +19,9 @@ function displayContact()
   let info1 = document.createElement('div');
   info1.classList.add('info');
 
+  let infoImg1 = document.createElement('img');
+  infoImg1.src = 'images/construccion.png';
+
   let txt1_1 = document.createElement('h1');
   txt1_1.textContent = "Contact";
 
@@ -42,6 +45,7 @@ function displayContact()
   contentOne.appendChild(img1);
 
   contentOne.appendChild(info1);
+  info1.appendChild(infoImg1);
   info1.appendChild(txt1_1);
   info1.appendChild(txt1_2);
 

@@ -83,3 +83,5 @@ displayMenu.appendChild(btnReservation);
 
 
 displayHome();
+
+//displayMenuSection();
